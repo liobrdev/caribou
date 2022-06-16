@@ -1,0 +1,31 @@
+.ItemRow {
+  display: inline-flex;
+  width: 100%;
+  min-height: 50px;
+
+  &-cell {
+    font-weight: 400;
+
+    &--order {
+      input {
+        display: inline-block;
+        width: 100%;
+        outline: none;
+        border: unset;
+        border-radius: 3px;
+        padding: 4px;
+        font-size: 16.5px;
+
+        &:focus {
+          border: 2px solid $gold;
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(2n - 1) {
+    td {
+      background-color: lightcyan;
+    }
+  }
+}

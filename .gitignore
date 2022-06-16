@@ -1,0 +1,25 @@
+# client
+client/.env.local
+client/.next
+client/node_modules
+client/npm-debug.log*
+
+# server
+server/*.class
+server/out
+server/.idea
+server/target
+server/dependency-reduced-pom.xml
+
+# certbot
+/certbot
+
+# nginx
+nginx/etc/nginx/conf.d/*.conf
+
+# misc
+*.pem
+/*.env
+/.vscode
+/secrets
+todo.txt
