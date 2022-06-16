@@ -26,9 +26,8 @@ class RootComponent extends Component<Props> {
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize);
-    setTimeout(() => {
-      this.handleResize();
-    }, 100);
+    setTimeout(() => this.handleResize(), 200);
+    setTimeout(() => this.handleResize(), 200);
   }
 
   componentWillUnmount() {
