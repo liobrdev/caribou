@@ -14,7 +14,7 @@ PROJECT_NAME=$1
 PROJECT_DIR=$HOME/$1
 cd $PROJECT_DIR
 
-if docker-compose run --rm -T certbot renew > /dev/null
+if docker compose run --rm -T certbot renew > /dev/null
 then
   echo "Successful certificate renewal."
 fi
