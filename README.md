@@ -1,9 +1,6 @@
 ## System Requirements
-- Latest LTS versions of Node and NPM
-- Java 11.0.15
-- Apache Maven 3.6.0
-
-Note: This project was built with the above setup - YMMV with older versions.
+- Latest LTS version of Node
+- Java 8
 
 ## Getting Started
 
@@ -32,4 +29,4 @@ After running the previous commands, open `http://localhost:3000` in a browser.
 
 ## Just For Fun
 
-See the deployed application at `https://randyscandies.liobr.dev`!
+See the deployed application at [https://randyscandies.liobr.dev](https://randyscandies.liobr.dev)!
