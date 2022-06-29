@@ -11,8 +11,7 @@ Build and run the frontend code within the `/client` folder:
 ```bash
 cd client
 npm install
-npm build
-npm run start
+npm run dev
 ```
 
 In a different terminal or tab, build and run the backend code within the `/server` folder:

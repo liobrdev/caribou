@@ -116,7 +116,7 @@ class InventoryForm extends Component<Props> {
             <tbody>
               {!!items.length ? items.map(
                 item => <ItemRow key={item.id} item={item} />
-              ) : <LoadingView className='LoadingView--table' />}
+              ) : <LoadingView className='LoadingView--table' isTable />}
             </tbody>
           </table>
         </div>
