@@ -49,13 +49,12 @@ public class CandyService {
         InputStream file = getWorkbookInputStream(inventoryFilename);
         Workbook workbook = new XSSFWorkbook(file);
         Sheet sheet = workbook.getSheet(storeName);
+        workbook.close();
 
         if (sheet == null) {
-            workbook.close();
             throw new MissingWorksheetException(storeName);
         }
 
-        workbook.close();
         return sheet;
     }
 

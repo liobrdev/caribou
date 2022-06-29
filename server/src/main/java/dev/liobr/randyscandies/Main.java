@@ -23,7 +23,7 @@ public class Main extends CandyService {
     }
 
     private static String handleRestockCost(Request req, Response res) throws Exception {
-        HashMap<?, ?> raw = new Gson().fromJson(req.body(), HashMap.class);
+        HashMap<?, ?> raw = gson.fromJson(req.body(), HashMap.class);
         HashMap<Integer, Pair<Integer, Double>> cart = new HashMap<>();
 
         for (Map.Entry<?, ?> entry : raw.entrySet()) {
@@ -35,8 +35,8 @@ public class Main extends CandyService {
                 Double quantity = (Double) value;
 
                 cart.put(
-                        Integer.parseInt(itemId),
-                        new Pair<>(quantity.intValue(), Double.POSITIVE_INFINITY)
+                    Integer.parseInt(itemId),
+                    new Pair<>(quantity.intValue(), Double.POSITIVE_INFINITY)
                 );
             } else {
                 ErrorResponseBody errResBody = new ErrorResponseBody();
